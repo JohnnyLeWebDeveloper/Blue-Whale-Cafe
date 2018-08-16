@@ -1,0 +1,364 @@
+* {
+  margin: 0;
+  padding: 0
+}
+
+body {
+  font-family: sans-sarif, arial !important;
+  background: #FFFFFF;
+}
+
+.container_inner {
+  max-width: 1000px;
+  margin: 0px auto;
+}
+
+/*   End Of Simple Typography   */
+
+.navbar .logo {
+  width: 250px;
+}
+
+.navbar-light .navbar-nav .nav-item {
+  margin: 0px 8px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #202020;
+  font-family: aileron;
+  font-weight: bold;
+  font-size: 14px;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-item.active .nav-link {
+  color: #a0a0a0;
+}
+
+.navbar-light .navbar-toggler {
+  border: 1px solid #4058A7;
+}
+
+.navbar-toggler {
+  font-size: 14px;
+}
+
+.navbar .navbar-nav .shopping-cart {
+  margin-top: -15px;
+}
+
+.slider {
+  background: url(images/slider_image.png) no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding: 245px 0px;
+  text-align: center;
+}
+
+.slider h1 {
+  color: #FFFFFF;
+  font-family: 'Source Serif Pro', serif;
+  font-weight: 600;
+  font-size: 80px;
+}
+
+.slider h5 {
+  color: #FFFFFF;
+  font-family: 'Source Serif Pro', serif;
+  font-weight: 600;
+  font-size: 40px;
+}
+
+.carousel-control-prev-icon {
+  background: url("images/previous.png") no-repeat;
+  width: 70px;
+  height: 40px;
+  position: absolute;
+  left: -50px;
+}
+
+.carousel-control-next-icon {
+  background: url("images/next.png") no-repeat;
+  width: 70px;
+  height: 40px;
+  position: absolute;
+  right: -50px;
+}
+
+/*								*/
+
+.about_us {
+  background: #FFFFFF;
+  padding: 60px 0px;
+}
+
+.about_us .top .content {
+  margin-top: 80px;
+}
+
+.about_us .top .content h3 {
+  color: #202020;
+  font-family: 'Source Serif Pro', serif;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.about_us .top .content p {
+  color: #202020;
+  font-family: sulphur_point;
+  font-weight: normal;
+  font-size: 22px;
+}
+
+.about_us .bottom {}
+
+.about_us .bottom .content {
+  margin-top: 150px;
+}
+
+.about_us .bottom .content p {
+  color: #202020;
+  font-family: sulphur_point;
+  font-weight: normal;
+  font-size: 22px;
+}
+
+.about_us .bottom .content h6 {
+  color: #202020;
+  font-family: 'Source Serif Pro', serif;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: right;
+  padding-right: 30px;
+  margin: 30px 0px;
+}
+
+.about_us .bottom .content h5 {
+  color: #202020;
+  font-family: 'Source Serif Pro', serif;
+  font-weight: 700;
+  font-size: 24px;
+  text-align: right;
+}
+
+/*								*/
+
+.explore_wholesafe {
+  background: url(images/whole_sale_bg.png) no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding: 70px 0px;
+  text-align: center;
+}
+
+.explore_wholesafe h2 {
+  color: #FFFFFF;
+  font-family: 'Source Serif Pro', serif;
+  font-weight: 600;
+  font-size: 50px;
+  margin-bottom: 0px;
+}
+
+.explore_wholesafe h5 {
+  color: #FFFFFF;
+  font-family: 'Source Serif Pro', serif;
+  font-weight: 400;
+  font-size: 20px;
+  margin: 40px 0px;
+}
+
+.explore_wholesafe a {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-family: aileron;
+  font-weight: bold;
+  font-size: 18px;
+  background: transparent;
+  padding: 5px 15px;
+  border: 2px solid #FFFFFF;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  margin-top: 15px;
+}
+
+.explore_wholesafe a:hover {
+  color: #202020;
+  background: #FFFFFF;
+}
+
+/*						*/
+
+.shop {
+  padding-top: 60px;
+}
+
+.shop .container_inner {
+  position: relative;
+}
+
+.shop .container_inner .button {
+  position: absolute;
+  bottom: 5%;
+  left: 43%;
+}
+
+.shop .container_inner .button a {
+  text-decoration: none;
+  color: #343434;
+  font-family: aileron;
+  font-weight: bold;
+  font-size: 18px;
+  background: transparent;
+  padding: 3px 50px;
+  border: 2px solid #959595;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+/*								*/
+
+.delivered_to_door .content {
+  margin-top: 120px;
+}
+
+.delivered_to_door h3 {
+  color: #202020;
+  font-family: 'Source Serif Pro', serif;
+  font-weight: 600;
+  font-size: 28px;
+}
+
+.delivered_to_door p {
+  color: #202020;
+  font-family: sulphur_point;
+  font-weight: normal;
+  font-size: 20px;
+}
+
+/*							*/
+
+.gallery_image {}
+
+.gallery_image .col-sm-4 {
+  padding-left: 0px;
+  padding-right: 0px;
+  border: 2px solid #FFFFFF;
+}
+
+.gallery_image .button {
+  text-align: right;
+  padding: 60px 0px;
+}
+
+.gallery_image a {
+  text-decoration: none;
+  color: #202020;
+  font-family: aileron;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.gallery_image a span {
+  font-size: 24px;
+  margin-left: 10px;
+}
+
+/*						*/
+
+.footer {}
+
+.footer .top {
+  padding: 20px 0px;
+}
+
+.footer .top .short_links {}
+
+.footer .top .short_links ul {
+  margin-bottom: 0px;
+}
+
+.footer .top .short_links ul li {
+  float: left;
+  list-style: none;
+  margin: 0px 10px;
+}
+
+.footer .top .short_links ul li a {
+  text-decoration: none;
+  color: #202020;
+  font-family: aileron;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.footer .top .social_share {
+  text-align: center;
+}
+
+.footer .top .social_share ul {
+  margin-bottom: 0px;
+}
+
+.footer .top .social_share ul li {
+  display: inline-block;
+  margin: 0px 10px;
+}
+
+.footer .top .social_share ul li a img {
+  vertical-align: middle;
+}
+
+.footer .top .email {
+  text-align: right;
+}
+
+.footer .top .email p {
+  color: #202020;
+  font-family: aileron;
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 0px;
+}
+
+.footer .top .email p span {
+  color: #787878;
+  font-weight: normal;
+  margin-right: 5px;
+}
+
+.footer .bottom {
+  padding: 20px 0px;
+}
+
+.footer .bottom .copyright {
+  text-align: left;
+}
+
+.footer .bottom .copyright p {
+  color: #787878;
+  font-family: aileron;
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 0px;
+}
+
+.footer .bottom .copyright p span {
+  font-weight: normal;
+  font-size: 12px;
+}
+
+.footer .bottom .designer {
+  text-align: right;
+}
+
+.footer .bottom .designer p {
+  color: #787878;
+  font-family: aileron;
+  font-weight: normal;
+  font-size: 12px;
+  margin-bottom: 0px;
+}

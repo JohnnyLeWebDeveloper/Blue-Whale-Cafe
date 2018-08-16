@@ -1,0 +1,27 @@
+@font-face{
+	font-family:"aileron";
+	src:url("../fonts/aileron.eot") format("eot"),
+	url("../fonts/aileron.svg#aileron") format("svg"),
+	url("../fonts/aileron.woff") format("woff"),
+	url("../fonts/aileron.ttf") format("truetype"),
+	url("../fonts/aileron.otf") format("otf");
+}
+
+@font-face{
+	font-family:"sulphur_point";
+	src:url("../fonts/sulphur_point.eot") format("eot"),
+	url("../fonts/sulphur_point.svg#sulphur_point") format("svg"),
+	url("../fonts/sulphur_point.woff") format("woff"),
+	url("../fonts/sulphur_point.ttf") format("truetype"),
+	url("../fonts/sulphur_point.otf") format("otf");
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600,700');
+
+
+/*	-----------
+
+	font-family: 'Source Serif Pro', serif;
+	
+-----------	*/
