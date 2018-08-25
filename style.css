@@ -13,6 +13,10 @@ body {
   margin: 0px auto;
 }
 
+.overflow-hidden {
+    overflow-x: hidden;
+}
+
 /*   End Of Simple Typography   */
 
 .navbar .logo {
@@ -111,8 +115,6 @@ body {
   font-weight: normal;
   font-size: 22px;
 }
-
-.about_us .bottom {}
 
 .about_us .bottom .content {
   margin-top: 150px;
@@ -241,8 +243,6 @@ body {
 
 /*							*/
 
-.gallery_image {}
-
 .gallery_image .col-sm-4 {
   padding-left: 0px;
   padding-right: 0px;
@@ -269,13 +269,9 @@ body {
 
 /*						*/
 
-.footer {}
-
 .footer .top {
   padding: 20px 0px;
 }
-
-.footer .top .short_links {}
 
 .footer .top .short_links ul {
   margin-bottom: 0px;
