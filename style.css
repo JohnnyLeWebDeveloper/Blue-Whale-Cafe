@@ -1,11 +1,252 @@
-* {
-  margin: 0;
-  padding: 0
+/* ------------------------- RESET CSS -------------------------- */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 body {
-  font-family: sans-sarif, arial !important;
-  background: #FFFFFF;
+    line-height: normal;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    clear: both;
+    font-weight: normal;
+}
+
+blockquote {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after {
+    content: '';
+    content: none;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+
+/* tables still need 'cellspacing="0"' in the markup */
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a img {
+    border: none;
+}
+
+div,
+input,
+p,
+textarea {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+*:focus {
+    outline: none;
+    /* REMOVES ANY ON FOCUS ON DIVS */
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+/* ------------------------- TRANSITIONS -------------------------- */
+
+.effect1 {
+    /* ENABLES ALL CSS TRANSITION FOR THAT NODE/TAG */
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.effect2 {
+    /* ENABLES ALL CSS TRANSITION FOR THAT NODE/TAG */
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.effect3 {
+    /* ENABLES ALL CSS TRANSITION FOR THAT NODE/TAG */
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+/* ------------------------- FLEXBOX -------------------------- */
+
+.flexCenter {
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;
+    /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Chrome */
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.flexRow {
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;
+    /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Chrome */
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+
+.flexColumn {
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;
+    /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Chrome */
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.bgImage {
+    background: no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .container_inner {
@@ -53,6 +294,68 @@ body {
   margin-top: -15px;
 }
 
+
+/*	Extra small devices (portrait phones, less than 576px)	*/
+@media (max-width: 575.98px) {
+	.navbar .container{
+		width:95%;
+	}
+	.navbar-light .navbar-nav .nav-item{
+		width:150px;
+		margin:0px auto;
+		border-bottom:1px solid #344EA3;
+	}
+	.navbar-light .navbar-nav .nav-item:last-child{
+		border-bottom:none;
+	}
+	.navbar .navbar-nav .shopping-cart{
+		margin-top:0px;
+	}	
+}
+
+/*	Extra small devices (portrait phones, less than 360px)	*/
+@media (max-width: 360px) {	
+	.navbar .logo{
+		width:180px;
+	}	
+}
+
+/*	Small devices (landscape phones, 576px and up)	*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+	.navbar .container{
+		width:95%;
+	}
+	.navbar-light .navbar-nav .nav-item{
+		width:150px;
+		margin:0px auto;
+		border-bottom:1px solid #344EA3;
+	}
+	.navbar-light .navbar-nav .nav-item:last-child{
+		border-bottom:none;
+	}
+	.navbar .navbar-nav .shopping-cart{
+		margin-top:0px;
+	}	
+}
+
+/*	Medium devices (tablets, 768px and up)	*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+	.navbar{
+		padding:20px 0px;
+	}
+	.navbar .logo{
+		width:180px;
+	}
+	.navbar-light .navbar-nav .nav-link{
+		font-size:12px;
+	}
+	.navbar-light .navbar-nav .nav-item{
+		margin:0px 4px;
+	}	
+}
+/*	---------------------	*/
+
+
 .slider {
   background: url(images/slider_image.png) no-repeat;
   background-position: center center;
@@ -91,7 +394,58 @@ body {
   right: -50px;
 }
 
-/*								*/
+
+/*	Extra small devices (portrait phones, less than 576px)	*/
+@media (max-width: 575.98px) {
+	.slider{
+		padding:120px 0px;
+	}
+	.slider h1{
+		font-size:55px;
+	}
+	.slider h5{
+		font-size:30px;
+	}
+	.carousel-control-next-icon{
+		right:0px;
+	}
+	.carousel-control-prev-icon{
+		left:0px;
+	}	
+}
+
+/*	Extra small devices (portrait phones, less than 410px)	*/
+@media (max-width: 409.98px) {	
+	.slider h1{
+		font-size:50px;
+	}	
+}
+
+/*	Small devices (landscape phones, 576px and up)	*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+	.slider{
+		padding:150px 0px;
+	}
+	.slider h1{
+		font-size:65px;
+	}
+	.slider h5{
+		font-size:36px;
+	}	
+}
+
+/*	Medium devices (tablets, 768px and up)	*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+	.slider{
+		padding:180px 0px;
+	}
+	.slider h1{
+		font-size:75px;
+	}	
+}
+/*	----------------------------	*/
+
+
 
 .about_us {
   background: #FFFFFF;
@@ -101,32 +455,27 @@ body {
 .about_us .top .content {
   margin-top: 80px;
 }
-
 .about_us .top .content h3 {
   color: #202020;
   font-family: 'Source Serif Pro', serif;
   font-weight: 700;
   font-size: 30px;
 }
-
 .about_us .top .content p {
   color: #202020;
   font-family: sulphur_point;
   font-weight: normal;
   font-size: 22px;
 }
-
 .about_us .bottom .content {
   margin-top: 150px;
 }
-
 .about_us .bottom .content p {
   color: #202020;
   font-family: sulphur_point;
   font-weight: normal;
   font-size: 22px;
 }
-
 .about_us .bottom .content h6 {
   color: #202020;
   font-family: 'Source Serif Pro', serif;
@@ -136,7 +485,6 @@ body {
   padding-right: 30px;
   margin: 30px 0px;
 }
-
 .about_us .bottom .content h5 {
   color: #202020;
   font-family: 'Source Serif Pro', serif;
@@ -145,7 +493,45 @@ body {
   text-align: right;
 }
 
-/*								*/
+
+/*	Extra small devices (portrait phones, less than 576px)	*/
+@media (max-width: 575.98px) {
+	.about_us .top .content{
+		margin-top:0px;
+	}
+	.about_us .bottom .content{
+		margin-top:20px;
+	}	
+}
+
+/*	Small devices (landscape phones, 576px and up)	*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+	.about_us .top .content{
+		margin-top:0px;
+	}
+	.about_us .bottom .content{
+		margin-top:20px;
+	}	
+}
+
+/*	Medium devices (tablets, 768px and up)	*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+	.about_us .top .content{
+		margin-top:0px;
+	}
+	.about_us .bottom .content{
+		margin-top:0px;
+	}
+	.about_us .bottom .content p{
+		font-size:18px;
+	}
+	.about_us .bottom .content h6{
+		font-size:14px;
+	}	
+}
+/*	----------------------------	*/
+
+
 
 .explore_wholesafe {
   background: url(images/whole_sale_bg.png) no-repeat;
@@ -191,7 +577,23 @@ body {
   background: #FFFFFF;
 }
 
-/*						*/
+
+/*	Extra small devices (portrait phones, less than 576px)	*/
+@media (max-width: 575.98px) {
+	.explore_wholesafe{
+		padding:50px 0px;
+	}
+	.explore_wholesafe h2{
+		font-size:36px;
+	}
+	.explore_wholesafe h5{
+		font-size:18px;
+		margin:30px 0px;
+	}	
+}
+/*	-----------------------------	*/
+
+
 
 .shop {
   padding-top: 60px;
@@ -206,7 +608,6 @@ body {
   bottom: 5%;
   left: 43%;
 }
-
 .shop .container_inner .button a {
   text-decoration: none;
   color: #343434;
@@ -221,7 +622,30 @@ body {
   transition: all 0.2s ease;
 }
 
-/*								*/
+
+/*	Extra small devices (portrait phones, less than 576px)	*/
+@media (max-width: 575.98px) {
+	.shop .container_inner .button{
+		left:37%;
+	}	
+}
+
+/*	Small devices (landscape phones, 576px and up)	*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+	.shop .container_inner .button{
+		left:37%;
+	}	
+}
+
+/*	Medium devices (tablets, 768px and up)	*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+	.shop .container_inner .button{
+		left:40%;
+	}	
+}
+/*	----------------------------	*/
+
+
 
 .delivered_to_door .content {
   margin-top: 120px;
@@ -241,7 +665,31 @@ body {
   font-size: 20px;
 }
 
-/*							*/
+
+/*	Extra small devices (portrait phones, less than 576px)	*/
+@media (max-width: 575.98px) {
+	.delivered_to_door .content{
+		margin-top:20px;
+	}	
+}
+
+/*	Small devices (landscape phones, 576px and up)	*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+	.delivered_to_door .content{
+		margin-top:20px;
+	}	
+}
+
+/*	Medium devices (tablets, 768px and up)	*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+	.delivered_to_door .content{
+		margin-top:0px;
+	}	
+}
+/*	----------------------------	*/
+
+
+
 
 .gallery_image .col-sm-4 {
   padding-left: 0px;
@@ -267,7 +715,35 @@ body {
   margin-left: 10px;
 }
 
-/*						*/
+
+/*	Extra small devices (portrait phones, less than 576px)	*/
+@media (max-width: 575.98px) {
+	.gallery_image .col-sm-4{
+		max-width:400px;
+		margin:5px auto;
+	}
+	.gallery_image .button{
+		padding:30px 0px;
+	}	
+}
+
+/*	Small devices (landscape phones, 576px and up)	*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+	.gallery_image .button{
+		padding:20px 0px;
+	}	
+}
+
+/*	Medium devices (tablets, 768px and up)	*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+	.gallery_image .button{
+		padding:30px 0px;
+	}	
+}
+/*	---------------------------	*/
+
+
+
 
 .footer .top {
   padding: 20px 0px;
@@ -358,3 +834,53 @@ body {
   font-size: 12px;
   margin-bottom: 0px;
 }
+
+
+/*	Extra small devices (portrait phones, less than 576px)	*/
+@media (max-width: 575.98px) {
+	.footer .top .short_links{
+		text-align:center;
+		margin-bottom:15px;
+	}
+	.footer .top .short_links ul li{
+		float:none;
+		display:inline-block;
+	}
+	.footer .top .email{
+		text-align:center;
+		margin-top:15px;
+	}
+	.footer .bottom .copyright{
+		text-align:center;
+	}
+	.footer .bottom .designer{
+		text-align:center;
+	}
+}
+
+/*	Small devices (landscape phones, 576px and up)	*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+	.footer .top .short_links{
+		text-align:center;
+		margin-bottom:15px;
+	}
+	.footer .top .short_links ul li{
+		float:none;
+		display:inline-block;
+	}
+	.footer .top .email{
+		text-align:center;
+		margin-top:15px;
+	}
+	.footer .bottom .copyright p{
+		font-size:12px;
+	}	
+}
+
+/*	Medium devices (tablets, 768px and up)	*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+	.footer .top .email p{
+		font-size:13px;
+	}	
+}
+/*	-----------------------------	*/
